@@ -24,9 +24,11 @@ int main()
         fin.close();
 
         cout << "1. Max Size: " << hourlyWage.size() << endl;
+        cout << "2. Values: ";
+        for (double val : hourlyWage) cout << val << " " << endl;
         cout << "2. Element 4: " << hourlyWage.at(4) << endl;
-        cout << "3. Back: " << hourlyWage.back() << endl;
-        cout << "4. Front: " << hourlyWage.front() << endl;
+        cout << "3. Front: " << hourlyWage.back() << endl;
+        cout << "4. Back: " << hourlyWage.front() << endl;
     }
     else
         cout << "File not found.\n";
